@@ -71,7 +71,7 @@ def inc_Q(s, a, alpha, inc):
 def run():
     global discount
     global gamma
-    time.sleep(1)
+    time.sleep(20)
     alpha = 1
     t = 1
     # If its taking too long, then restart and try again
@@ -117,3 +117,4 @@ t = threading.Thread(target=run)
 t.daemon = True
 t.start()
 Maze.start_game()
+
